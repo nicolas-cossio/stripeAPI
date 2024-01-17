@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        .boton {
+            background-color: #008000;
+            border: none;
+            color: white;
+            padding: 6px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .input {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 6px 12px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Checkout</h1>
+        <form id="checkout-form" method="post" action="/process-payment">
+            <div>
+                <input type="text" name="amount" class="input" placeholder="Monto">
+            </div>
+            <div>
+                <input type="text" name="currency" class="input" placeholder="Moneda (PEN, USD, EUR)">
+            </div>
+            <button class="boton" type="submit">Pay</button>
+        </form>
+    </div>
+</body>
+</html>

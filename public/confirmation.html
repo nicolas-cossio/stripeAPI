@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./js/confirmation.js"></script>
+    <style>
+        .box {
+                border: 2px solid #008000; /* Borde verde */
+                background-color: #008000; /* Color de fondo verde */
+                padding: 10px; /* Espaciado interno para el contenido */
+                margin: 10px; /* Margen externo para separación */
+                width: 15%;
+            }
+    </style>
+    
+</head>
+<body>
+    <div class="sr-root">
+        <div class="sr-main">
+            <h1>Orden Confirmada!</h1>
+            <div id="id-orden"></div>
+            <div class="box">
+                <div id="fecha-orden"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

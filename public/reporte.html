@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Estados</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./js/reporte.js"></script>
+    <style>
+        #transaction-id-input {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 6px 12px;
+            width: 300px;
+        }
+        .boton {
+            background-color: #008000;
+            border: none;
+            color: white;
+            padding: 6px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sr-root">
+        <div class="sr-main">
+            <h1>Reporte de Transacciones</h1>
+            <form id="reporte-form">
+                <input type="text" id="transaction-id-input" placeholder="ID de la transacción">
+                <button class="boton">Consultar</button>
+            </form>
+            <br>
+            <div id="contenido-reporte"></div>
+        </div>
+    </div>
+</body>
+</html>
